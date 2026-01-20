@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>TechWave-Podcast Website</title>
+    <style>
+
+        .footer-section {
+                height: 30vh;
+                background-image: url(./assets/footer-bg.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    </style>
 
 </head>
 
@@ -13,41 +24,58 @@
     <!-- Heder section -->
     <header class="">
 
-        <div class="bg-[#412567]">
+        <div class="bg-[#1A0B2E]">
 
-            <nav class="flex justify-between items-center py-[30px] px-[200px] border border-b-white-300">
-                <div>
-                    <h1 class="text-3xl h-2"><span class="font-bold text-white">Tech</span><span
-                            class=" font-black bg-gradient-to-b from-purple-1000 via-pink-500 to-yellow-400 bg-clip-text text-transparent">Wave</span>
-                    </h1>
-                </div>
-                <ul class="flex gap-2 text-white font-1 font-300">
+  <nav class="flex justify-items-center items-center  justify-between 
+   px-[20px] py-10 lg:py-[30px] md:px-[200px] border border-b-white-300">
+
+            <h1 class="text-3xl "><span class="font-bold text-white">Tech</span><span
+                   class=" font-black bg-gradient-to-b from-purple-1000 via-pink-500 to-yellow-400 bg-clip-text text-transparent">Wave</span>
+                  </h1>
+                
+                <ul class="hidden lg:flex gap-2 text-white font-1 font-300 ">
                     <li><a href="">About</a></li>
                     <li><a href="">Episodes</a></li>
                     <li><a href="">Host</a></li>
 
                 </ul>
-                <button
-                    class="flex items-center gap-1 px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 ">Subscribe
-                    <img src="./assets/Vector.png" alt=""></button>
-            </nav>
+                
+
+                    <button class="hidden lg:block relative overflow-hidden text-white px-6 py-2 rounded-full bg-gradient-to-tr 
+                from-[#f3e54c] via-[#FB09B4] to-[#9100F8] font-medium shadow-lg flex items-center gap-2
+                transition-all duration-300 hover:scale-105 hover:shadow-pink-500/40">
+
+                    <span class="absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300 hover:opacity-100
+                rounded-full"></span>
+
+                    <span class="relative z-10 flex items-center gap-2">Subscribe <img src="./assets/Vector.png" alt="">
+                    </span>
+                </button>
+                <img class="block lg:hidden " src="./assets/hamburger-menu.png" alt="">
+                </nav>
+                
         </div>
 
         <section>
             <div class="">
-                <div class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center w-90vh h-[700px] ">
+                <div class="bg-[url('./assets/hero-bg.png')] bg-cover  h-100vh bg-center">
                     <div class="">
                     </div>
-                    <div class="flex justify-items-center items-center flex-col px-[500px]  mx-auto ">
+         <div class="flex justify-items-center items-center flex-col lg:px-[500px]  mx-auto ">
 
-                        <div
-                            class="relative  flex justify-items-center items-center flex-col  mt[100px]  mx-auto  ">
-                            <img class="absolute mt-[120px] ml-[20px]" src="./assets/microphone.png" alt="">
-                            <button
-                                class="absolute bg-[#00FF88] rounded-full ml-[200px] px-4 py-3 font-1 font-300 mt-5 ">NEW</button>
+            <div class="relative 
+             flex justify-items-center
+              items-center flex-col
+                mt[100px]  mx-auto  ">
+                    <img class="absolute mt-[130px] ml-[20px]" src="./assets/microphone.png" alt="">
+                        <button
+            class="absolute bg-[#00FF88] 
+            rounded-full ml-[200px] px-4 py-3 
+            font-1 font-300 mt-5 ">NEW</button>
 
 
-                                <div class=" bg-[url('./assets/hero-circle.png')] w-[400px] h-[400px] bg-no-repeat ml-20 mt-10"></div>
+         
+                 <img class="mt-10 w-[400px]" src="./assets/hero-circle.png " alt="">
 
 
                             <h1 class="text-white text-6xl font-semibold my-5">TechWave</h1>
@@ -56,7 +84,7 @@
 
                             <div class="flex mt-5 mb-5">
                                 <button
-                                    class=" mr-[20px] flex items-center gap-1 px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 "><img
+                                    class="  mr-[20px] flex items-center gap-1 px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 "><img
                                         src="./assets/spotify.png" alt="">Listen on Spotify </button>
                                 <button
                                     class="flex items-center gap-2 px-8 py-3 text-[#00FF88] font-bold rounded-full border border-[#00FF88] "><img
@@ -108,8 +136,8 @@
                     </div>
 
 
-                    <div>
-                        <h4 class="mb-[15px] text-[#00FF88] text-5xl font-black">4.9 +<img src="" alt=""></h4>
+                    <div class=" flex flex-col">
+    <h4 class="mb-[15px] text-[#00FF88] text-5xl font-black">4.9 ★</h4>
                         <p class="text-base text-[#FFFFFF]">Average Rating</p>
                     </div>
 
@@ -127,87 +155,191 @@
 
 
         <section>
-            
-            <h1 class="text-white text-6xl font-semibold mx-auto bg-[#230E3D] mx-[1600px] mx-auto text-center px-[200px] pt-[120px]">Why Choose TechWave</h1>
+
+            <h1
+                class="text-white text-6xl font-semibold mx-auto bg-[#230E3D] mx-[1600px] mx-auto text-center px-[200px] pt-[120px]">
+                Why Choose TechWave</h1>
             <div class="grid  grid-cols-3   gap-4 px-[200px] py-20 bg-[#230E3D]">
 
                 <div class="pb-[120px] row-span-2 bg-[#1b0a33] pt-20 pb-10 px-4 rounded-3xl border border-gray-800">
                     <div class="text-pink-500 mb-4"><img src="./assets/headphone.png" alt=""></div>
                     <h3 class=" text-white font-bold text-2xl  mb-2">Premium Audio Quality</h3>
-                    <p class="text-gray-400 text-base">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    <p class="text-gray-400 text-base">Experience crystal-clear sound with professional-grade recording
+                        equipment and expert audio engineering. Every episode is mastered for optimal listening across
+                        all devices and platforms.</p>
                 </div>
 
                 <div class=" col-span-2 bg-[#1b0a33] rounded-3xl border border-gray-800 py-10 px-4">
                     <div class="text-pink-500 mb-2 "><img src="./assets/device.png" alt=""> </div>
                     <h3 class="font-bold text-2xl text-[#FFFFFF] ">Mobile Friendly</h3>
-                    <p class="text-gray-400 text-base">Listen on the go with seamless mobile experience and offline downloads.</p>
+                    <p class="text-gray-400 text-base">Listen on the go with seamless mobile experience and offline
+                        downloads.</p>
                 </div>
 
                 <div class=" col-span-2 bg-[#1b0a33]  rounded-3xl border border-gray-800 py-10 px-4">
                     <div class=" text-pink-500 mb-2 "><img src="./assets/location.png" alt=""></div>
                     <h3 class="text-white font-bold text-2xl">Global Community</h3>
-                    <p class="text-gray-400 text-base">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                    <p class="text-gray-400 text-base">Connect with tech enthusiasts from over 120 countries worldwide.
+                    </p>
                 </div>
 
-                  
 
-                       <div class=" col-span-2 bg-[#1b0a33]  rounded-3xl border border-gray-800 py-10 px-4">
-                           <div class="text-pink-500 mb-4"><img src="./assets/Icon (Stroke).png" alt=""></div>
-                           <h3 class="text-white font-bold mb-2 text-2xl">Exclusive Interviews</h3>
-                           <p class="text-gray-400 text-base">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
-                       </div>
-                       <div class="col-span-1  bg-[#1b0a33] rounded-3xl border border-gray-800 py-10 px-4">
-                           <div class="text-pink-500 mb-2"><img src="./assets/resource.png" alt=""></div>
-                           <h3 class="text-white font-bold text-2xl">Rich Resources</h3>
-                           <p class="text-gray-400 text-base">Access show notes, transcripts, and additional learning materials for every episode.</p>
-                       </div>
+
+                <div class=" col-span-2 bg-[#1b0a33]  rounded-3xl border border-gray-800 py-10 px-4">
+                    <div class="text-pink-500 mb-4"><img src="./assets/Icon (Stroke).png" alt=""></div>
+                    <h3 class="text-white font-bold mb-2 text-2xl">Exclusive Interviews</h3>
+                    <p class="text-gray-400 text-base">Get unprecedented access to industry titans, startup founders,
+                        and tech visionaries. Our host secures exclusive conversations you won't find anywhere else,
+                        diving deep into their journeys, failures, and success strategies.</p>
+                </div>
+                <div class="col-span-1  bg-[#1b0a33] rounded-3xl border border-gray-800 py-10 px-4">
+                    <div class="text-pink-500 mb-2"><img src="./assets/resource.png" alt=""></div>
+                    <h3 class="text-white font-bold text-2xl">Rich Resources</h3>
+                    <p class="text-gray-400 text-base">Access show notes, transcripts, and additional learning materials
+                        for every episode.</p>
+                </div>
             </div>
         </section>
-           
-           <!-- feFeatured Episodes -->
-            <section class="bg-[#230E3D]">
-                 <div class="px-4 mx-0 lg:px-[200px] py-[120px] bg-[#1b0a33] border border-gray-800">
-                     <h1 class="text-white text-6xl font-semibold mx-auto  mx-[1600px] mb-8 text-center ">Featured Episodes</h1>
-                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  ">
-              
-                  <div class=" rounded-3xl bg-[#250D44]   ">
-                      <iframe class="rounded-t-3xl" width="100%" height="315" src="https://www.youtube.com/embed/3T9ze4LZ0G4?si=H_-2dF5OH2NGBXUG&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                           <div class="p-5 ">                             
-                               <h3 class="text-white text-2xl font-bold mb-3">The first step to becoming a software engineer. How to Start Software Engineering. ICT Bangladesh</h3>
-                               <p class="text-gray-400 text-base mb-3">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                               <button class="flex justify-items-center items-center gap-1 text-[#00FF88]"><img src="./assets/clock.png" alt="">40 min</button>
-                           </div>
 
-                  </div>
-                  <div class=" rounded-3xl bg-[#250D44]  ">
-                      <iframe class="rounded-t-3xl" width="100%" height="315" src="https://www.youtube.com/embed/58dodckcmvw?si=pSkqLyUawTcNVEmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                           <div class="p-5 ">                             
-                               <h3 class="text-white text-2xl font-bold mb-3">Building Better Habits for Remote Work</h3>
-                               <p class="text-gray-400 text-base mb-3">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
-                               <button class="flex justify-items-center items-center gap-1 text-[#00FF88]"><img src="./assets/clock.png" alt="">30 min</button>
-                           </div>
+        <!-- feFeatured Episodes -->
+        <section class="bg-[#230E3D]">
+            <div class="px-4 mx-0 lg:px-[200px] py-[120px] bg-[#1b0a33] border border-gray-800">
+                <h1 class="text-white text-6xl font-semibold mx-auto  mx-[1600px] mb-8 text-center ">Featured Episodes
+                </h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  ">
 
-                  </div>
-                  <div class=" rounded-3xl bg-[#250D44]   ">
-                      <iframe class="rounded-t-3xl" width="100%" height="315" src="https://www.youtube.com/embed/ho-OXi9noA0?si=kr9WpZO4hteYZSie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                           <div class="p-5 ">                             
-                               <h3 class="text-white text-2xl font-bold mb-3">The first step to becoming a software engineer. How to Start Software Engineering. ICT Bangladesh</h3>
-                               <p class="text-gray-400 text-base mb-3">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                               <button class="flex justify-items-center items-center gap-1 text-[#00FF88]"><img src="./assets/clock.png" alt="">35 min</button>
-                           </div>
+                    <div class=" rounded-3xl bg-[#250D44]   ">
+                        <iframe class="rounded-t-3xl" width="100%" height="315"
+                            src="https://www.youtube.com/embed/3T9ze4LZ0G4?si=H_-2dF5OH2NGBXUG&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="p-5 ">
+                            <h3 class="text-white text-2xl font-bold mb-3">The first step to becoming a software
+                                engineer. How to Start Software Engineering. ICT Bangladesh</h3>
+                            <p class="text-gray-400 text-base mb-3">Exploring how artificial intelligence is
+                                transforming our daily routines and what to expect in the next decade.</p>
+                            <button class="flex justify-items-center items-center gap-1 text-[#00FF88]"><img
+                                    src="./assets/clock.png" alt="">40 min</button>
+                        </div>
 
-                  </div>
+                    </div>
+                    <div class=" rounded-3xl bg-[#250D44]  ">
+                        <iframe class="rounded-t-3xl" width="100%" height="315"
+                            src="https://www.youtube.com/embed/58dodckcmvw?si=pSkqLyUawTcNVEmV"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="p-5 ">
+                            <h3 class="text-white text-2xl font-bold mb-3">Building Better Habits for Remote Work</h3>
+                            <p class="text-gray-400 text-base mb-3 ">Practical strategies for staying productive and
+                                maintaining work-life balance in a remote environment.</p>
+                            <button class="flex justify-items-center items-center gap-1 text-[#00FF88] mt-5"><img
+                                    src="./assets/clock.png" alt="">30 min</button>
+                        </div>
 
-                  
-                    
-                     </div>
-                 </div>      
-            </section>
+                    </div>
+                    <div class=" rounded-3xl bg-[#250D44]   ">
+                        <iframe class="rounded-t-3xl" width="100%" height="315"
+                            src="https://www.youtube.com/embed/ho-OXi9noA0?si=kr9WpZO4hteYZSie"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="p-5 ">
+                            <h3 class="text-white text-2xl font-bold mb-3">The first step to becoming a software
+                                engineer. How to Start Software Engineering. ICT Bangladesh</h3>
+                            <p class="text-gray-400 text-base mb-3">Exploring how artificial intelligence is
+                                transforming our daily routines and what to expect in the next decade.</p>
+                            <button class="flex justify-items-center items-center gap-1 text-[#00FF88]"><img
+                                    src="./assets/clock.png" alt="">35 min</button>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Host section -->
+
+           <section class="bg-[#1A0B2E]">
+               <div class="px-[200px] py-[120px] ">
+                   <h1 class="text-white text-6xl font-bold mx-auto  mx-[1600px] mb-8 text-center">Meet the Host</h1>
+                   <div class="flex items-center border border-gray-800 bg-[#533C72] rounded-3xl">
+       
+                       <div class="w-[300px] mr-[20px] p-[40px]">
+                           <img src="./assets/host.png" alt="">
+       
+                       </div>
+       
+                       <div class="py-20">
+                           <h4 class="text-3xl text-white font-semibold">Alex Kumar</h4>
+                           <p class="text-gray-400 text-base py-[16px]">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry
+                               for over 10 years, <br> working with startups and   Fortune 500 companies. Through TechWave, Alex 
+                               shares insights from industry leaders <br>and  practical advice for anyone looking to grow in tech.
+                           </p>
+                          <div class="flex gap-4 ">
+                              <a href="## "><img class="rounded-3xl border border-white p-2" src="./assets/youtube.png" alt=""></a>
+          
+                              <a href="## "><img class="rounded-3xl border border-white p-2" src="./assets/linkedin.png" alt=""> </a>
+          
+                              <a href="## "><img class="rounded-3xl border border-white p-2" src="./assets/x.png" alt=""> </a>
+                              <a href="## "><img class="rounded-3xl border border-white p-2" src="./assets/instagram.png" alt=""> </a>
+                          </div>
+       
+                       </div>
+       
+       
+                   </div>
+       
+       
+               </div>
+           </section>
+
+
     </main>
     <!-- footer section -->
-    <footer>
+    <footer >
+        
 
+
+        <section class="footer-section hidden md:block   ">
+               
+            <div class="">
+
+                <h1 class=" text-center py-10 text-6xl font-bold text-white">Tech<span
+                        class="font-black bg-gradient-to-b from-purple-1000 via-pink-500 to-yellow-400 bg-clip-text text-transparent">Wave</span></h1>
+    
+                <div class="flex justify-center items-center gap-20 mt-4">
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/spotify.png" alt=""></a>
+                        <h6 class="text-gray-300">Spotify</h6>
+                    </div>
+    
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/apple-podcast.png" alt=""></a>
+                        <h6 class="text-gray-300">Apple Podcasts</h6>
+                    </div>
+    
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/youtube.png" alt=""></a>
+                        <h6 class="text-gray-300">YouTube</h6>
+                    </div>
+    
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/twitter.png" alt=""></a>
+                        <h6 class="text-gray-300">Twitter</h6>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="text-center text-gray-400 mt-10">© 2026 TechWave Podcast. All rights reserved.</h5>
+        </section>
+      
     </footer>
+
 </body>
 
 </html>
